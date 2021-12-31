@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+body {
+  background: url("images/PP Background.jpg");
+  background-size: cover;
+}
+
+.pageBackgroundImg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 300px;
+}
+
+#videoBackground {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navMobileIcon {
+  margin-right: 75px;
+}
+button {
+  color: white;
+}
+
+.navbar-brand {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1px;
+}
+
+.nameTitle {
+  font-size: 5em;
+  color: white;
+  margin-bottom: 10px;
+}
+.webTitle {
+  font-size: 1.5em;
+  color: white;
+}
+
+.nameContainer {
+  margin-top: 20%;
+}
+
+.cardSpace {
+  margin-top: 32%;
+}
+
+.bottomArrow {
+  position: relative;
+  bottom: 5em;
+}
+
+@media (max-width: 762px) {
+  .nameContainer {
+    margin-top: 5%;
+  }
+}
+
+/* GitHub Corner */
+
+.github-corner:hover .octo-ear {
+  animation: octocat-twitch 560ms ease-in-out;
+}
+
+@keyframes octocat-twitch {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  25%,
+  75% {
+    transform: rotate(6deg);
+  }
+
+  50% {
+    transform: rotate(-4deg) scale(1);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-ear {
+    animation: none;
+  }
+
+  .github-corner .octo-ear {
+    animation: octocat-twitch 560ms ease-in-out;
+  }
+}
